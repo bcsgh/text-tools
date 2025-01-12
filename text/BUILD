@@ -1,5 +1,6 @@
 exports_files([
   "prep_dict.py",
+  "spelling.bzl",
 ])
 
 load("@rules_python//python:py_binary.bzl", "py_binary")

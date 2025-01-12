@@ -25,6 +25,18 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
+"""
+# A Bazel test rule for text files.
+## `MODULE.bazel`
+
+```
+bazel_dep(
+    name = "com_github_bcsgh_text_tools",
+    version = ...,
+)
+```
+"""
+
 def _spell_test_impl(ctx):
     _PYTHON = ctx.toolchains["@bazel_tools//tools/python:toolchain_type"].py3_runtime
 
